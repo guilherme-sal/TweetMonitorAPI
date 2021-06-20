@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4d78864-fbb7-48f2-ba4e-0b49b8b6ab46" name="Default Changelist" comment="" />
+    <list default="true" id="c4d78864-fbb7-48f2-ba4e-0b49b8b6ab46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1u2m4fFLSoEiC1ouIbU31hCvoz1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,7 +49,7 @@
       <recent name="$PROJECT_DIR$/api_core" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.installer">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TweetMonitorAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tweets_table" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="installer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TweetMonitorAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apicore/cruds" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apicore/cruds/tweets_table.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/installer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.installer" />
         <item itemvalue="Python.api" />
         <item itemvalue="Python.db_init" />
         <item itemvalue="Python.db_remove" />
         <item itemvalue="Python.collect_scheduler" />
-        <item itemvalue="Python.tweets_table" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +176,14 @@
       <option name="presentableId" value="Default" />
       <updated>1623871867178</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1624209187326</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624209187326</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,30 +198,38 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623872342785">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1623872342785" />
-    <state width="1899" height="297" key="GridCell.Tab.0.bottom" timestamp="1624206028720">
+    <state width="1899" height="297" key="GridCell.Tab.0.bottom" timestamp="1624209283934">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1204" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1624025713166" />
-    <state width="1899" height="297" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1624206028720" />
-    <state width="1899" height="297" key="GridCell.Tab.0.center" timestamp="1624206028720">
+    <state width="1899" height="297" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1624209283934" />
+    <state width="1899" height="297" key="GridCell.Tab.0.center" timestamp="1624209283933">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1204" height="305" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1624025713165" />
-    <state width="1899" height="297" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1624206028720" />
-    <state width="1899" height="297" key="GridCell.Tab.0.left" timestamp="1624206028719">
+    <state width="1899" height="297" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1624209283933" />
+    <state width="1899" height="297" key="GridCell.Tab.0.left" timestamp="1624209283933">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1204" height="305" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1624025713164" />
-    <state width="1899" height="297" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1624206028719" />
-    <state width="1899" height="297" key="GridCell.Tab.0.right" timestamp="1624206028720">
+    <state width="1899" height="297" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1624209283933" />
+    <state width="1899" height="297" key="GridCell.Tab.0.right" timestamp="1624209283934">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1204" height="305" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1624025713166" />
-    <state width="1899" height="297" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1624206028720" />
+    <state width="1899" height="297" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1624209283934" />
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1624209200075">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1624209200075" />
   </component>
 </project>
