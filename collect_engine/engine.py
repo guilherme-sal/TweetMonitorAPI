@@ -82,7 +82,7 @@ if __name__ == '__main__':
     ### New targets
     while NEW_TARGETS:
         THREADS = []
-        for i in range(1):
+        for i in range(10):
             t = threading.Thread(target=collect_new_targets)
             THREADS.append(t)
 

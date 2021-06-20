@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4d78864-fbb7-48f2-ba4e-0b49b8b6ab46" name="Default Changelist" comment="" />
+    <list default="true" id="c4d78864-fbb7-48f2-ba4e-0b49b8b6ab46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +190,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624212797095</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="remove requirements.txt">
+      <created>1624213396360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624213396360</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add .idea to .gitignore">
+      <created>1624213442034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624213442034</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +222,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Add installer.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add installer.py" />
+    <MESSAGE value="remove requirements.txt" />
+    <MESSAGE value="add .idea to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .idea to .gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623872342785">
@@ -233,9 +251,9 @@
     </state>
     <state width="1204" height="305" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1624025713166" />
     <state width="1899" height="297" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1624213110741" />
-    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1624212801016">
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1624213443512">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1624212801016" />
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1624213443512" />
   </component>
 </project>
