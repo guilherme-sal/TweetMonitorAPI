@@ -4,6 +4,7 @@ from flask import Flask
 from flask_restful import Resource, Api
 from apicore.cruds.target_table import return_target_info, create_target, return_targets_list, \
     delete_target_from_target_list
+from apicore.functions import filter_unused_columns, format_alltweets_db_as_aggregated_info_df, format_target_string
 from apicore.cruds.tweets_table import return_tweets_table_as_df, return_tweets_from_target_as_list, \
     delete_tweets_from_target
 
@@ -89,6 +90,7 @@ class AllTweets(Resource):
     def get(self):
         try:
             df = return_tweets_table_as_df()
+            df = filter_unused_columns(df)
             return {'Code': 200, 'Alert': 'Success - Dataframe retrieved.', 'Dataframe': df.to_dict('index')}
         except Exception as e:
             return {'Code': 400, 'Alert': f'Error - {e}.', 'Dataframe': None}
@@ -99,9 +101,54 @@ class TweetsFromTarget(Resource):
     def get(self, target):
         try:
             target_df = return_tweets_from_target_as_list(target)
+            target_df = filter_unused_columns(target_df)
             return {'Code': 200, 'Alert': 'Success - Dataframe retrieved.', 'Dataframe': target_df.to_dict('index')}
         except Exception as e:
             return {'Code': 400, 'Alert': f'Error - {e}.', 'Dataframe': None}
+
+
+### AGGREGATED ALLTWEETS DB ####
+
+class AggregatedDB(Resource):
+
+    def get(self):
+        try:
+            df = return_tweets_table_as_df()
+            df = filter_unused_columns(df)
+            df = format_alltweets_db_as_aggregated_info_df(df)
+            return {'Code': 200, 'Alert': 'Success - Dataframe retrieved.', 'Dataframe': df.to_dict('index')}
+        except Exception as e:
+            return {'Code': 400, 'Alert': f'Error - {e}.', 'Dataframe': None}
+
+
+### CREATE TARGETS FROM LIST ENDPOINT ###
+
+class PostMultipleTargets(Resource):
+
+    def post(self, t_list):
+        try:
+            t_list = t_list.strip().split(',')
+            target_list = return_targets_list()
+            targets_to_add = []
+
+            for target in t_list:
+                target = target.replace(",", '')
+                target = format_target_string(target)
+                if target in target_list:
+                    pass
+                else:
+                    targets_to_add.append(target.strip())
+
+            if targets_to_add:
+                for target in targets_to_add:
+                    create_target(target)
+                return {'Code': 200, 'Alert': 'Success - Targets added to list', 'Targets added': targets_to_add}
+            else:
+                return {'Code': 400, 'Alert': 'Error - No new targets to add', 'Targets added': targets_to_add}
+        except Exception as e:
+            return {'Code': 400, 'Alert': f'Error - {e}', 'Targets added': None}
+
+
 
 
 api.add_resource(Log, '/log')
@@ -110,6 +157,8 @@ api.add_resource(Target, '/target/<string:target>')
 api.add_resource(AllTargets, '/targets')
 api.add_resource(AllTweets, '/tweets')
 api.add_resource(TweetsFromTarget, '/tweets/<string:target>')
+api.add_resource(AggregatedDB, '/tweets/aggregate/all')
+api.add_resource(PostMultipleTargets, '/targets/postlist/<string:t_list>')
 
 
 if __name__ == '__main__':
