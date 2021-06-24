@@ -110,15 +110,18 @@ if __name__ == '__main__':
     DF = DF.astype(str)
     DF['id'] = DF['id'].astype(int)
 
+    row_data_list = []
     for index, row in DF.iterrows():
         row_data = [row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11],
                     row[12], row[13], row[14], row[15], row[16], row[17], row[18], row[19], row[20], row[21], row[22],
                     row[23], row[24], row[25], row[26], row[27], row[28], row[17], row[29], row[30], row[31], row[32],
                     row[33], row[34], row[35], row[36], row[37]]
-        create_rows(row_data)
+        row_data_list.append(row_data)
+    create_rows(row_data_list)
 
     engine_end = datetime.now()
 
+    ### Saving engine log ###
     with open('collect_engine/engine_log.txt', 'a') as log:
         log.write(
             f'Engine started at: #{engine_start}; Engine stopped at: #{engine_end}; #{len(DF)} tweets collected\n')
