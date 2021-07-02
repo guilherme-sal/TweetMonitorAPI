@@ -109,6 +109,7 @@ if __name__ == '__main__':
     print(f"\n### Saving tweets in database...")
     DF = DF.astype(str)
     DF['id'] = DF['id'].astype(int)
+    DF = DF.drop_duplicates(subset=['id'])
 
     row_data_list = []
     for index, row in DF.iterrows():

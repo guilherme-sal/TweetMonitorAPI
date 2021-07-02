@@ -12,6 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c4d78864-fbb7-48f2-ba4e-0b49b8b6ab46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicore/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/apicore/functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624543016193</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="WSGI configuration">
+      <created>1624640111839</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624640111839</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Pipfile added">
+      <created>1624640319627</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624640319627</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,13 +264,15 @@
     <MESSAGE value="engine threads = 10" />
     <MESSAGE value="Add endpoint for aggregated db" />
     <MESSAGE value="Engine optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="Engine optimized" />
+    <MESSAGE value="WSGI configuration" />
+    <MESSAGE value="Pipfile added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pipfile added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624639612371">
+    <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624640160861">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1624639612371" />
+    <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1624640160861" />
     <state width="1899" height="297" key="GridCell.Tab.0.bottom" timestamp="1624558142267">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -275,9 +293,10 @@
     </state>
     <state width="1204" height="305" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1624025713166" />
     <state width="1899" height="297" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1624558142266" />
-    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1624543021346">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="560" y="274" key="Vcs.Push.Dialog.v2" timestamp="1624640321880">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="560" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624640321880" />
     <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1624543021346" />
   </component>
 </project>

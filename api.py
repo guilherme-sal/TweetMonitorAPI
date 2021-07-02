@@ -4,7 +4,8 @@ from flask import Flask
 from flask_restful import Resource, Api
 from apicore.cruds.target_table import return_target_info, create_target, return_targets_list, \
     delete_target_from_target_list
-from apicore.functions import filter_unused_columns, format_alltweets_db_as_aggregated_info_df, format_target_string
+from apicore.functions import filter_unused_columns, format_alltweets_db_as_aggregated_info_df, format_target_string, \
+    drop_duplicates_from_df
 from apicore.cruds.tweets_table import return_tweets_table_as_df, return_tweets_from_target_as_list, \
     delete_tweets_from_target
 
@@ -91,6 +92,7 @@ class AllTweets(Resource):
         try:
             df = return_tweets_table_as_df()
             df = filter_unused_columns(df)
+            df = drop_duplicates_from_df(df)
             return {'Code': 200, 'Alert': 'Success - Dataframe retrieved.', 'Dataframe': df.to_dict('index')}
         except Exception as e:
             return {'Code': 400, 'Alert': f'Error - {e}.', 'Dataframe': None}
@@ -102,6 +104,7 @@ class TweetsFromTarget(Resource):
         try:
             target_df = return_tweets_from_target_as_list(target)
             target_df = filter_unused_columns(target_df)
+            target_df = drop_duplicates_from_df(target_df)
             return {'Code': 200, 'Alert': 'Success - Dataframe retrieved.', 'Dataframe': target_df.to_dict('index')}
         except Exception as e:
             return {'Code': 400, 'Alert': f'Error - {e}.', 'Dataframe': None}

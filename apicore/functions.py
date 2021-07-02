@@ -8,7 +8,8 @@ def format_target_string(target):
 
 
 def filter_unused_columns(df):
-    df = df[['id', 'username', 'date', 'tweet', 'nlikes', 'nretweets', 'nreplies', 'hashtags', 'urls', 'photos']]
+    df = df[['id', 'username', 'date', 'tweet', 'nlikes', 'nretweets', 'nreplies', 'hashtags', 'urls', 'photos',
+             'thumbnail', 'language']]
     return df
 
 
@@ -32,3 +33,8 @@ def format_alltweets_db_as_aggregated_info_df(df):
     df_grouped['last_tweet'] = last_tweet_list
     df_grouped = df_grouped.reset_index()
     return df_grouped
+
+
+def drop_duplicates_from_df(df):
+    df = df.drop_duplicates(subset=['id'])
+    return df
