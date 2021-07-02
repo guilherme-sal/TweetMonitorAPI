@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4d78864-fbb7-48f2-ba4e-0b49b8b6ab46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apicore/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/apicore/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <recent name="$PROJECT_DIR$/api_core" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.db_init">
+  <component name="RunManager" selected="Python.api">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TweetMonitorAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,9 +158,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.api" />
         <item itemvalue="Python.db_init" />
         <item itemvalue="Python.db_remove" />
-        <item itemvalue="Python.api" />
         <item itemvalue="Python.installer" />
         <item itemvalue="Python.collect_scheduler" />
       </list>
@@ -241,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624640319627</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="drop duplicates from df">
+      <created>1625231759738</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1625231759738</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +272,8 @@
     <MESSAGE value="Engine optimized" />
     <MESSAGE value="WSGI configuration" />
     <MESSAGE value="Pipfile added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pipfile added" />
+    <MESSAGE value="drop duplicates from df" />
+    <option name="LAST_COMMIT_MESSAGE" value="drop duplicates from df" />
   </component>
   <component name="WindowStateProjectService">
     <state x="683" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624640160861">
@@ -293,10 +300,10 @@
     </state>
     <state width="1204" height="305" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1624025713166" />
     <state width="1899" height="297" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1624558142266" />
-    <state x="560" y="274" key="Vcs.Push.Dialog.v2" timestamp="1624640321880">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1625231761823">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="560" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1624640321880" />
-    <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1624543021346" />
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2/0.23.1920.1057@0.23.1920.1057" timestamp="1625231761823" />
   </component>
 </project>

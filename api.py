@@ -118,6 +118,7 @@ class AggregatedDB(Resource):
         try:
             df = return_tweets_table_as_df()
             df = filter_unused_columns(df)
+            df = drop_duplicates_from_df(df)
             df = format_alltweets_db_as_aggregated_info_df(df)
             return {'Code': 200, 'Alert': 'Success - Dataframe retrieved.', 'Dataframe': df.to_dict('index')}
         except Exception as e:
